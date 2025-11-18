@@ -1,0 +1,17 @@
+[package]
+name = "arch-pkg-analyzer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+alpm = "4.0"           # Targets libalpm v15 [8]
+clap = { version = "4.4", features = ["derive"] }
+anyhow = "1.0"         # Application-level error handling
+thiserror = "1.0"      # Library-level error definitions
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] } # If async fetching is needed later
+termcolor = "1.2"
+
+[dev-dependencies]
+assert_cmd = "2.0"     # For testing CLI outpuf
