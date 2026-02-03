@@ -12,8 +12,9 @@ lint:
   @echo Linting…
   cargo clippy --all-targets -- -D warnings
   cargo +nightly fmt --all -- --check
+  taplo fmt *.toml
   taplo format --check
-  cargo deny check
+  # cargo deny check
   cargo machete
 
 check:

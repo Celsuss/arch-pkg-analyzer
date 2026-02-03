@@ -1,0 +1,23 @@
+# rustfmt.toml
+
+# STABLE OPTIONS
+# -----------------
+# Sets the max width for both code and comments (standard is 80 or 100).
+max_width = 100
+
+# PREVIEW/UNSTABLE OPTIONS
+# -----------------
+# To use these, you must run cargo +nightly fmt
+# These give you the "smart" comment handling you likely want.
+
+# opt-in to unstable features
+unstable_features = true
+
+# specific limit just for comments (if different from code)
+comment_width = 80
+
+# reflows comments (breaks long lines, merges short ones)
+wrap_comments = true
+
+# converts // header to /// # Header for you
+normalize_comments = true
