@@ -14,6 +14,7 @@ clap = { version = "4.4", features = ["derive"] }
 # "full",
 # ] } # If async fetching is needed later
 # termcolor = "1.2"
+regex = "1.12.3"
 
 [dev-dependencies]
 assert_cmd = "2.0" # For testing CLI outpuf

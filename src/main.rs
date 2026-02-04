@@ -15,8 +15,7 @@ struct Args {
 fn print_packages(path: &Path) {
     println!("Hello {:?}!", path.to_str());
     for entry in path.read_dir().expect("read_dir call failed").flatten() {
-        println!("{:?}", entry.path());
-        file_parser::get_pkg_name(entry.path().as_path());
+        file_parser::print_pkg_names(entry.path().as_path());
     }
 }
 
